@@ -1,0 +1,40 @@
+.screen {
+	margin: 20px 4px;
+	padding: 0px;
+	width: 392px;
+	height: 100px;
+	border: 1px solid black;
+	font-size: 44px;
+	color: #fff;
+	overflow: hidden;
+}
+.result {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: end;
+	align-items: center;
+	width: 100%;
+	height: 30%;
+	padding: 4px;
+	font-size: 16px;
+	color: rgb(197, 197, 197);
+}
+.enter {
+	display: flex;
+	word-break: break-all;
+	justify-content: end;
+	align-items: center;
+	width: 100%;
+	height: 70%;
+	padding: 4px;
+	overflow-x: auto;
+	font-size: 45px;
+}
+.field {
+	width: 390px;
+	padding: 5px;
+	margin: 20px 5px;
+	font-size: 22pt;
+	background-color: rgba(153, 153, 153, 0.575);
+	color: #fff;
+}

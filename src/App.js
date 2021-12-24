@@ -1,30 +1,21 @@
 import { useState } from 'react';
 import './App.css';
-import Buttons from './components/Buttons';
-import Screen from './components/Screen';
+import {Buttons} from './components';
+import {Screen} from './components';
 
 function App() {
-	const [num, setNum] = useState('');
-  const [result, setResult] = useState('');
-
-	const addElInEnter = (newNum) => {
-		setNum(newNum);
-	};
-
-  const createResult = (newResult) => {
-		setResult(newResult);
-	};
+	const [number, setNumber] = useState('');
+	const [result, setResult] = useState('');
 
 	return (
 		<div className='App'>
 			<div className='calc'>
-				<Screen num={num} result={result} />
-
+				<Screen number={number} result={result} />
 				<Buttons
-					num={num}
+					number={number}
 					result={result}
-					createNum={addElInEnter}
-					createResult={createResult}
+					createNumber={(newNumber) => setNumber(newNumber)}
+					createResult={(newResult) => setResult(newResult)}
 				/>
 			</div>
 		</div>
